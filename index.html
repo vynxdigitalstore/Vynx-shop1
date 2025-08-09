@@ -1,0 +1,195 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="VYNX Digital Marketing Shop — premium digital services at affordable prices. TikTok, Discord Nitro, streaming accounts, VPNs, design tools and more." />
+    <meta name="keywords" content="VYNX, digital store, Discord Nitro, Robux, VPN, Netflix, Spotify, digital services" />
+    <title>VYNX Digital Marketing Shop</title>
+    <link rel="shortcut icon" href="./Images/photo_2025-08-03_01-56-10.jpg" type="image/x-icon">
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+
+    <!-- split CSS -->
+    <link rel="stylesheet" href="./Css.css">
+
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container nav">
+            <div class="brand">
+                <img src="./Images/photo_2025-08-03_01-56-10.jpg" alt="VYNX logo" class="brand-logo" />
+                <div>
+                    <h1 class="brand-title">VYNX</h1>
+                    <div class="muted">Digital Marketing Shop</div>
+                </div>
+            </div>
+
+            <nav aria-label="Main navigation">
+                <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav">☰</button>
+                <ul id="mainNav" class="nav-list">
+                    <li><a href="#products" data-i18n="nav_products">Products</a></li>
+                    <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+                    <li><a href="#about" data-i18n="nav_about">About</a></li>
+                </ul>
+            </nav>
+
+            <div class="right-controls">
+                <div class="lang-toggle" role="tablist" aria-label="Language selector">
+                    <button id="btn-en" class="lang-btn active" aria-pressed="true">EN</button>
+                    <button id="btn-mm" class="lang-btn" aria-pressed="false">မြန်မာ</button>
+                </div>
+
+                <div class="socials" aria-hidden="false">
+                    <a class="social-pill" href="https://www.tiktok.com/@vynx.digital.stor?_t=ZS-8yjQIGJRRS6&_r=1" target="_blank" title="TikTok">TikTok</a>
+                    <a class="social-pill" href="https://www.facebook.com/profile.php?id=61578772244076&mibextid=LQQJ4d" target="_blank" title="Facebook">Facebook</a>
+                    <a class="social-pill" href="https://discord.gg/ScxKkfJa" target="_blank" title="Discord">Discord</a>
+                    <a class="social-pill" href="https://t.me/vynxdigitalmarketing" target="_blank" title="Telegram">Telegram</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <main>
+        <section class="hero" aria-labelledby="heroHeading">
+            <div class="container hero-inner">
+                <div class="hero-left">
+
+                    <h2 id="heroHeading" class="sr-only">VYNX Digital Services</h2>
+                    <div class="tagline" data-i18n-text="tagline">We sell premium digital services at affordable prices. Contact us today!</div>
+
+                    <div class="hero-cta">
+                        <button class="btn primary" id="shopNow" data-i18n-text="shop_now">Shop Now</button>
+                        <button class="btn ghost" id="contactNow" data-i18n-text="contact_us">Contact Us</button>
+                    </div>
+
+                    <div class="social-links" aria-hidden="false">
+                        <a class="social-card" href="https://www.tiktok.com/@vynx.digital.stor?_t=ZS-8yjQIGJRRS6&_r=1" target="_blank"><strong>TikTok</strong><span class="muted">@vynx.digital.stor</span></a>
+                        <a class="social-card" href="https://www.facebook.com/profile.php?id=61578772244076&mibextid=LQQJ4d" target="_blank"><strong>Facebook</strong><span class="muted">VYNX Page</span></a>
+                        <a class="social-card" href="https://discord.gg/ScxKkfJa" target="_blank"><strong>Discord</strong><span class="muted">Join</span></a>
+                    </div>
+                </div>
+
+                <div class="hero-right" aria-hidden="true">
+                    <!-- decorative large star to match logo feel (kept) -->
+                    <svg width="320" height="320" viewBox="0 0 200 200" class="logo-large" aria-hidden="true">
+            <defs>
+              <radialGradient id="g1" cx="50%" cy="40%">
+                <stop offset="0%" stop-color="#b266ff" stop-opacity="0.9" />
+                <stop offset="100%" stop-color="#1b0620" stop-opacity="0" />
+              </radialGradient>
+            </defs>
+            <rect width="100%" height="100%" rx="20" fill="url(#g1)" />
+            <text x="50%" y="60%" text-anchor="middle" font-family="Montserrat" font-size="46" fill="#fff" opacity="0.95">VYNX</text>
+          </svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRODUCTS -->
+        <section id="products" class="products container">
+            <!-- categories will be injected by JS -->
+            <div id="catalog"></div>
+
+            <!-- extra message -->
+            <div class="notice">
+                <div class="muted" data-i18n-text="extra_msg">This list is not all we sell. DM us for other digital products you want.</div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="container contact-section" style="padding:40px 0">
+            <div class="contact-grid-layout">
+                <div>
+                    <h2 data-i18n-text="contact_title">Contact Us</h2>
+                    <div class="contact-grid">
+                        <div class="contact-card">
+                            <strong data-i18n-text="contact_phone">Phone</strong>
+                            <div class="phones">
+                                <a href="tel:+9595663509220" class="phone-item"><span class="icon">📞</span><span>095663509220</span></a>
+                                <a href="tel:+959765007350" class="phone-item"><span class="icon">📞</span><span>09765007350</span></a>
+                                <a href="tel:+959266692266" class="phone-item"><span class="icon">📞</span><span>09266692266</span></a>
+                            </div>
+
+                            <div style="margin-top:8px">
+                                <strong data-i18n-text="contact_others">Other</strong>
+                                <div class="other-links">
+                                    <a href="https://t.me/vynxdigitalmarketing" target="_blank">Telegram</a>
+                                    <a href="https://discord.gg/ScxKkfJa" target="_blank">Discord</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <strong data-i18n-text="contact_msg">Send us a message</strong>
+                            <p class="muted" data-i18n-text="contact_msg_desc">Click any "Message to Buy" button to contact us via Telegram for fast service.</p>
+                            <div class="contact-actions">
+                                <a class="chip" href="https://t.me/vynxdigitalmarketing" target="_blank">Message on Telegram</a>
+                                <a class="chip" id="openMessageOptions">Message — choose app</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="support-card">
+                    <div>
+                        <h3 data-i18n-text="contact_card_title">VYNX Support</h3>
+                        <p class="muted" data-i18n-text="contact_card_desc">Open 9:00 — 21:00 (local). For urgent requests use Telegram or call directly.</p>
+                        <div style="margin-top:10px;display:flex;gap:8px">
+                            <a class="chip" href="tel:+9595663509220">095663509220</a>
+                            <a class="chip" href="tel:+959765007350">09765007350</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- MESSAGE OPTIONS MODAL -->
+    <div id="messageModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="messageTitle">
+        <div class="panel">
+            <h3 id="messageTitle">Send message via</h3>
+            <p class="muted">Choose an app to send your order. We'll pre-fill a message with the product you selected.</p>
+            <div class="msg-grid" id="msgApps"></div>
+            <div style="display:flex;gap:8px;justify-content:flex-end;margin-top:12px">
+                <button class="btn ghost" id="closeMsgModal">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- PRODUCT INFO MODAL -->
+    <div class="modal" id="infoModal" role="dialog" aria-modal="true" aria-labelledby="infoTitle">
+        <div class="panel">
+            <h3 id="infoTitle">Product Details</h3>
+            <div id="infoBody"></div>
+            <div style="display:flex;gap:8px;justify-content:flex-end;margin-top:12px">
+                <button class="btn primary" id="buyFromInfo">Message to Buy</button>
+                <button class="btn ghost" id="closeInfo">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container footer-inner">
+            <div class="muted">&copy; <span id="year"></span> VYNX Digital Marketing Shop — <small>Made by VYNX Digital Marketing Shop</small></div>
+            <div class="footer-links">
+                <a href="https://t.me/vynxdigitalmarketing" target="_blank">Telegram</a> &nbsp;•&nbsp;
+                <a href="https://discord.gg/ScxKkfJa" target="_blank">Discord</a> &nbsp;•&nbsp;
+                <a href="https://www.facebook.com/profile.php?id=61578772244076&mibextid=LQQJ4d" target="_blank">Facebook</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- split JS -->
+    <script src="./java.js"></script>
+</body>
+
+</html>
